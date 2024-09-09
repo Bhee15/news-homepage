@@ -18,7 +18,7 @@ ul{
 }
 .desktop-nav li:hover{
     cursor: pointer;
-    color: var(--soft-orange);
+    color: var(--soft-red);
 }
 .mobile-nav{
     color: var(--very-dark-blue);
@@ -33,9 +33,17 @@ ul{
     right: 1rem;
     top: 1rem;
 }
-/* texts-under-section-1 */
+.web-image-1{
+    padding-left: 0.6rem;
+}
 .web-image-2{
     display: none;
+}
+/* texts-under-section-1 */
+.text-1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
 }
 .text-2{
     font-size: 15px;
@@ -43,8 +51,12 @@ ul{
 }
 .btn{
     background-color: var(--soft-red);
+    color: var(--very-dark-blue);
     border: none;
     border-radius: 0;
+    font-size: 15px;
+    min-width: 50%;
+    min-height: 25%;
 }
 .btn:hover{
     cursor: pointer;
@@ -52,24 +64,26 @@ ul{
     color: var(--off-white);
 }
 /* section-2 */
-.section-2{
+.div-sec-2{
     background-color: var(--very-dark-blue);
+    /* min-height: 90%; */
 }
 h2{
     color: var(--soft-orange);
+    font-weight: 700;
+    padding: 1rem 0;
 }
-.heading-cars{
+.hTag{
     color: var(--off-white);
 }
-.heading-AI{
-    color: var(--off-white);
+.hTag:hover{
+    cursor: pointer;
+    color: var(--soft-orange);
 }
-.heading-funding{
-    color: var(--off-white);
-}
-p{
+.pTag{
     color: var(--grayish-blue);
     font-size: 15px;
+    padding-bottom: 1rem;
 }
 hr{
     color: var(--grayish-blue);
@@ -88,8 +102,17 @@ h3{
     color: var(--soft-red);
     font-weight: 800;
 }
-.pTag{
+h6{
+    font-size: 18px;
+    color: var(--very-dark-blue);
+}
+h6:hover{
+    cursor: pointer;
+    color: var(--soft-red);
+}
+p{
     color: var(--dark-grayish-blue);
+    font-size: 0.9rem;
 }
 
 @media(max-width:428px){
@@ -99,11 +122,33 @@ h3{
     }
     .text-1{
         font-weight: 800;
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
-    .section-2{
+    .btn{
+        margin-bottom: 2rem;
+    }
+     .section-2{
         margin-top: 3rem;
+     }
+    .div-sec-2{
+        margin: 0 0.6rem; 
     }
-
+    h2{
+        font-size: 30px;
+    }
+    .div-image{
+        padding-bottom: 4rem;
+        margin-top: 1rem ;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h6{
+        font-weight: 800;
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
 }
 
